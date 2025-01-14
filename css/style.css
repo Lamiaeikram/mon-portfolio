@@ -58,12 +58,12 @@ a {
   color: #ffffff; }
 
 .text-primary {
-  color: #c9d2b7 !important; }
+  color: #c9d2b7!important; }
 
 a.text-primary {
-  color: #c9d2b7 !important; }
-  a.text-primary:hover {
-    color: #c9d2b7 !important; }
+  color: #c9d2b7  !important;}
+a.text-primary:hover {
+    color: #c9d2b7 !important;}
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-family: "Montserrat", sans-serif;
