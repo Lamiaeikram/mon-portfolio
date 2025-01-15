@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Untree.co">
   
-
+  <link rel="shortcut icon" href="fav_icone.png">
   <meta name="description" content="" />
   <meta name="keywords" content="" />
 
@@ -27,6 +27,9 @@
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
+  <div id="loading">
+    <div class="spinner"></div>
+</div>
 
   <div class="lines-wrap">
     <div class="lines-inner">
@@ -426,7 +429,7 @@
               <div class="testimonial-v1">
                 <div class="mb-4">
                   <h3>Gestion des étudiants</h3>
-                  <span class="caption">CEO &amp; Co-Founder</span>
+                  <span class="caption">ERP Odoo</span>
                 </div>
                 <blockquote>
                   <p>Développement d'un module Odoo pour la gestion des étudiants et des départements de l’ENSA de Tétouan.
@@ -661,7 +664,7 @@
                 <span class="icon-service"><img src="images/svg/service-icon-5.svg" alt="Image" class="img-fluid"></span>
               </div>
               <h3 class="gsap-reveal-hero">Autres Domaines</h3>
-              <p class="gsap-reveal-hero">Ouverte à explorer d'autres aspects de l'informatique tels que la gestion de projet, la cybersécurité et l'analyse de données.</p>
+              <p class="gsap-reveal-hero">Ouverte à explorer d'autres aspects de l'informatique.</p>
             </div>
           </div>
 
@@ -692,7 +695,20 @@
 
 
 
-
+    <script>
+      // Attendre que tout le DOM soit chargé
+      document.addEventListener("DOMContentLoaded", function () {
+          const loading = document.getElementById("loading");
+          const content = document.getElementById("content");
+  
+          // Simuler un délai de chargement (par exemple 2 secondes)
+          setTimeout(() => {
+              loading.style.display = "none"; // Masquer la page de chargement
+              content.style.display = "block"; // Afficher le contenu principal
+          }, 2000); // Ajustez la durée selon vos besoins
+      });
+  </script>
+  
    
 
     <script src="js/jquery-3.4.1.min.js"></script>
